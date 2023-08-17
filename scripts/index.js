@@ -45,8 +45,9 @@ const homeAccountFooterButton = document.querySelector('.account-home')
 const favoriteAccountFooterButton = document.querySelector('.account-favorite')
 const searchAccountFooterButton = document.querySelector('.account-search')
 const profileAccountFooterButton = document.querySelector('.account-profile')
-
-
+// Genre buttons
+const genreButtons = document.querySelectorAll('.genre-button')
+const genreButtonLinks = document.querySelectorAll('.button-link')
 
 // Events
 buttonFirstStartContainer.addEventListener('click', () => {
@@ -184,4 +185,16 @@ searchAccountFooterButton.addEventListener('click', () => {
 
 profileFavoriteFooterButton.addEventListener('click', () => {
   accountContainer.style.display = 'block'
+})
+
+genreButtons.forEach(genreButton => {
+  genreButton.addEventListener('click', () => {
+    categoryContainer.style.display = 'block'
+  })
+})
+
+genreButtonLinks.forEach(genreButtonLink => {
+  genreButtonLink.addEventListener('click', () => {
+    categoryContainer.style.display = 'block'
+  })
 })

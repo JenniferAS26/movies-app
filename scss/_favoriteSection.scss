@@ -12,7 +12,7 @@
   padding: 30px 15px;
   background-color: v.$light-color;
   &__header {
-    @include m.headerStyles(70px, space-between, center);
+    @include m.headerStyles(70px, row, space-between, center);
     &--button {
       @include m.buttonStyle(
         50px, 50px, 30%, 

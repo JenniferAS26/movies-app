@@ -265,6 +265,7 @@ a {
 }
 .profile-container__header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -468,6 +469,17 @@ a {
   color: #976DBD;
 }
 
+.button-link {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  border: none;
+  border-radius: none;
+  background-color: transparent;
+  color: rgba(91, 39, 138, 0.5);
+  font-size: 1.4rem;
+}
+
 .category-container {
   display: none;
   width: 375px;
@@ -482,6 +494,7 @@ a {
 }
 .category-container__header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -604,6 +617,7 @@ a {
 }
 .favorite-container__header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -714,6 +728,7 @@ a {
 }
 .account-container__header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -729,9 +744,65 @@ a {
   object-fit: cover;
   border-radius: 50%;
 }
+.account-container__header--text {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #976DBD;
+}
+.account-container__header--title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #BD9E6D;
+}
 .account-container__main {
   width: 100%;
   height: auto;
+}
+.account-container__main--form {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  gap: 35px;
+}
+.account-container__main--form input {
+  width: 280px;
+  height: 40px;
+  border: none;
+  padding: 15px 20px;
+  color: #BD9E6D;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  background-color: rgba(92, 39, 138, 0.1215686275);
+}
+.account-container__main--form input::placeholder {
+  color: #976DBD;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.account-container__main--form input:focus {
+  outline: 2px solid #BD9E6D;
+}
+.account-container__main--form input:focus {
+  background-color: rgba(189, 158, 109, 0.1529411765);
+}
+.account-container__main--form button {
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #5B278A;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.account-container__main--form button:hover {
+  background-color: #BD9E6D;
 }
 .account-container__footer {
   position: absolute;

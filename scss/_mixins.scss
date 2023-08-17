@@ -63,16 +63,9 @@
   }
 }
 
-// @mixin headerStyles {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: 100%;
-//   height: 70px;
-// }
-
-@mixin headerStyles($height, $justify, $align) {
+@mixin headerStyles($height, $direction, $justify, $align) {
   display: flex;
+  flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
   width: 100%;

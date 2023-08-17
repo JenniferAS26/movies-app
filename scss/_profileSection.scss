@@ -12,7 +12,7 @@
   padding: 30px 15px;
   background-color: v.$light-color;
   &__header {
-    @include m.headerStyles(70px, space-between, center);
+    @include m.headerStyles(70px, row, space-between, center);
     &--messages {
       width: 200px;
       h3 {
@@ -151,4 +151,9 @@
       color: v.$secondary-color;
     }
   }
+}
+
+
+.button-link {
+  @include m.buttonStyle(auto, auto, none, transparent, rgba($color: v.$primary-color, $alpha: 0.5), 1.4rem);
 }
