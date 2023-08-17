@@ -2,14 +2,13 @@
 @use 'mixins' as m;
 
 .movie-detail {
-  // display: none;
+  display: none;
   @include m.containerStyle(
     absolute, 
     calc(50% - v.$mobile-min-height / 2), 
     calc(50% - v.$mobile-min-width / 2)
   );
   z-index: 2;
-  // padding: 30px 15px;
   background-color: v.$light-color;
   &__header {
     padding: 30px 15px;

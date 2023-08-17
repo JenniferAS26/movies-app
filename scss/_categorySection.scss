@@ -33,6 +33,7 @@
     &--cards {
       @include m.cardContainer;
       .card {
+        cursor: pointer;
         padding: 20px;
         width: 100%;
         height: 90px;

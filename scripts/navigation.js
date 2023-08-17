@@ -11,7 +11,12 @@ const profileContainer = document.querySelector('.profile-container')
 const categoryContainer = document.querySelector('.category-container')
 const favoriteContainer = document.querySelector('.favorite-container')
 const accountContainer = document.querySelector('.account-container')
+const movieDetailContainer = document.querySelector('.movie-detail')
 
+// Cards
+const movieCard = document.querySelector('.movie-card')
+const movieTrendingCards = document.querySelectorAll('.trending-card')
+const categoryCard = document.querySelector('.category-card')
 
 // buttons
 const buttonFirstStartContainer = document.querySelector('.start-container__first--button')
@@ -48,6 +53,11 @@ const profileAccountFooterButton = document.querySelector('.account-profile')
 // Genre buttons
 const genreButtons = document.querySelectorAll('.genre-button')
 const genreButtonLinks = document.querySelectorAll('.button-link')
+// Movie detail buttons
+const backMovieDetailButton = document.querySelector('.movie-detail-back')
+const genreMovieDetailButtons = document.querySelectorAll('.genres__card--icon')
+const likeMovieDetailButton = document.querySelector('.movie-detail-like')
+/*----------------------------------------------------------------------*/ 
 
 // Events
 buttonFirstStartContainer.addEventListener('click', () => {
@@ -195,6 +205,42 @@ genreButtons.forEach(genreButton => {
 
 genreButtonLinks.forEach(genreButtonLink => {
   genreButtonLink.addEventListener('click', () => {
+    categoryContainer.style.display = 'block'
+  })
+})
+
+// Card redirect
+movieCard.addEventListener('click', () => {
+  profileContainer.style.display = 'none'
+  movieDetailContainer.style.display = 'block'
+})
+
+movieTrendingCards.forEach(movieTrendingCard => {
+  movieTrendingCard.addEventListener('click', () => {
+    favoriteContainer.style.display = 'none'
+    movieDetailContainer.style.display = 'block'
+  })
+})
+
+categoryCard.addEventListener('click', () => {
+  categoryContainer.style.display = 'none'
+  movieDetailContainer.style.display = 'block'
+})
+
+// Movie Detail
+backMovieDetailButton.addEventListener('click', () => {
+  movieDetailContainer.style.display = 'none'
+  profileContainer.style.display = 'block'
+})
+
+likeMovieDetailButton.addEventListener('click', () => {
+  movieDetailContainer.style.display = 'none'
+  favoriteContainer.style.display = 'block'
+})
+
+genreMovieDetailButtons.forEach(genreMovieDetailButton => {
+  genreMovieDetailButton.addEventListener('click', () => {
+    movieDetailContainer.style.display = 'none'
     categoryContainer.style.display = 'block'
   })
 })
