@@ -1,0 +1,39 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.account-container {
+  display: none;
+  @include m.containerStyle(
+    absolute, 
+    calc(50% - v.$mobile-min-height / 2), 
+    calc(50% - v.$mobile-min-width / 2)
+  );
+  z-index: 2;
+  padding: 30px 15px;
+  background-color: v.$light-color;
+  &__header {
+    @include m.headerStyles(180px, center, center);
+    &--picture {
+      @include m.pictureStylesHeader(110px, 110px);
+    }
+  }
+  &__main {
+    width: 100%;
+    height: auto;
+  }
+  &__footer {
+    @include m.footerStyles;
+    button {
+      @include m.buttonStyle(
+        50px, 50px, 30%, 
+        v.$light-color, rgba($color: v.$dark-color, $alpha: 0.2), 2.4rem
+      );
+      &:hover {
+        color: v.$secondary-color;
+      }
+    }
+    .account-profile {
+      color: v.$secondary-color;
+    }
+  }
+}

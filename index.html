@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio de SASS</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <section class="start-container">
+      <div class="start-container__first">
+        <h1 class="start-container__first--title">Let's find</h1>
+        <p class="start-container__first--text">together</p>
+        <div class="start-container__first--image-container"></div>
+        <button class="start-container__first--button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="start-container__second">
+        <h1 class="start-container__second--title">your favorite</h1>
+        <div class="start-container__second--image-container"></div>
+        <button class="start-container__second--button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="start-container__third">
+        <h1 class="start-container__third--title">movie</h1>
+        <div class="start-container__third--image-container"></div>
+        <button class="start-container__third--button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+    <section class="auth-container">
+      <div class="auth-container__sign-register">
+        <h1 class="auth-container__sign-register--title">Let's enjoy your search!</h1>
+        <div class="auth-container__sign-register--image-container"></div>
+        <div class="auth-container__sign-register--buttons">
+          <button class="signin">Sign in</button>
+          <button class="register">Register</button>
+        </div>
+      </div>
+      <div class="auth-container__signin">
+        <div class="auth-container__signin--header">
+          <button class="chevron-left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="signup">Sign Up</button>
+        </div>
+        <div class="auth-container__signin--image-container"></div>
+        <div class="auth-container__signin--form-container">
+          <h2 class="title">Sign In</h2>
+          <form class="form">
+            <input type="text" placeholder="Username or e-mail">
+            <input type="password" placeholder="Enter your password">
+            <button class="signin-button">Sign In</button>
+          </form>
+        </div>
+      </div>
+      <div class="auth-container__register">
+        <div class="auth-container__register--header">
+          <button class="chevron-left-r"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="signin-r">Sign In</button>
+        </div>
+        <div class="auth-container__register--image-container"></div>
+        <div class="auth-container__register--form-container">
+          <h2 class="title">Sign Up</h2>
+          <form class="form">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="E-mail">
+            <input type="password" placeholder="Enter your password">
+            <button class="signin-button">Sign In</button>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="auth-container__forgot-password"></div>
+      <div class="auth-container__verif-code"></div> -->
+    </section>
+    <section class="profile-container">
+      <div class="profile-container__header">
+        <div class="profile-container__header--messages">
+          <h3>Hi, <span>Username!</span></h3>
+          <p>Let's discover a New Movie for today</p>
+        </div>
+        <figure class="profile-container__header--picture">
+          <img src="./assets/images/profile-pic2.jpg" alt="profile picture">
+        </figure>
+      </div>
+      <div class="profile-container__search">
+        <form class="profile-container__search--form">
+          <input type="text" placeholder="Search">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+      <div class="profile-container__categories">
+        <div class="profile-container__categories--category romance">
+          <button><i class="fa-solid fa-heart"></i></button>
+          <span>Romantic</span>
+        </div>
+        <div class="profile-container__categories--category sci-fi">
+          <button><i class="fa-solid fa-robot"></i></button>
+          <span>Sci-Fi</span>
+        </div>
+        <div class="profile-container__categories--category horror">
+          <button><i class="fa-solid fa-ghost"></i></button>
+          <span>Horror</span>
+        </div>
+        <div class="profile-container__categories--category documentary">
+          <button><i class="fa-solid fa-glasses"></i></button>
+          <span>Documentary</span>
+        </div>
+      </div>
+      <div class="profile-container__discover">
+        <h2 class="profile-container__discover--title">Discover</h2>
+        <div class="profile-container__discover--links">
+          <a href="#">Horror</a>
+          <a href="#">Romance</a>
+          <a href="#">Documentary</a>
+          <a href="#">Sci-Fi</a>
+        </div>
+        <div class="profile-container__discover--movies-container">
+          <div class="movie-card">
+            <img class="movie-card__image" src="./assets/images/1-image.jpg" alt="movie poster">
+            <h3 class="movie-card__title">Edward Scissorhands</h3>
+            <p class="movie-card__text-year">1990</p>
+            <p class="movie-card__text-genre">
+              <a href="">Fantasy |</a>
+              <a href="">Drama |</a>
+              <a href="">Romance</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-container__footer">
+        <button class="profile-container__footer--button profile-home">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button class="profile-container__footer--button profile-favorite">
+          <i class="fa-solid fa-heart"></i></button>
+        <button class="profile-container__footer--button profile-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="profile-container__footer--button profile-profile">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </div>
+    </section>
+    <section class="category-container">
+      <div class="category-container__header">
+        <button class="category-container__header--button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <figure class="category-container__header--picture">
+          <img src="./assets/images/profile-pic2.jpg" alt="profile picture">
+        </figure>
+      </div>
+      <div class="category-container__main">
+        <h2 class="category-container__main--title">Categories</h2>
+        <div class="category-container__main--cards">
+          <div class="card">
+            <div class="card__image-category">
+              <i class="fa-solid fa-ghost"></i>
+            </div>
+            <div class="card__name-quantity">
+              <h3 class="card__name-quantity--name">Category name</h3>
+              <p class="card__name-quantity--quantity">12365</p>
+            </div>
+            <button class="card__chevron-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="card">
+            <div class="card__image-category">
+              <i class="fa-solid fa-ghost"></i>
+            </div>
+            <div class="card__name-quantity">
+              <h3 class="card__name-quantity--name">Category name</h3>
+              <p class="card__name-quantity--quantity">12365</p>
+            </div>
+            <button class="card__chevron-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="card">
+            <div class="card__image-category">
+              <i class="fa-solid fa-ghost"></i>
+            </div>
+            <div class="card__name-quantity">
+              <h3 class="card__name-quantity--name">Category name</h3>
+              <p class="card__name-quantity--quantity">12365</p>
+            </div>
+            <button class="card__chevron-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="card">
+            <div class="card__image-category">
+              <i class="fa-solid fa-ghost"></i>
+            </div>
+            <div class="card__name-quantity">
+              <h3 class="card__name-quantity--name">Category name</h3>
+              <p class="card__name-quantity--quantity">12365</p>
+            </div>
+            <button class="card__chevron-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="category-container__footer">
+        <button class="category-container__footer--button category-home">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button class="category-container__footer--button category-favorite">
+          <i class="fa-solid fa-heart"></i></button>
+        <button class="category-container__footer--button category-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="category-container__footer--button category-profile">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </div>
+    </section>
+    <section class="favorite-container">
+      <div class="favorite-container__header">
+        <button class="favorite-container__header--button favorite-back">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <figure class="favorite-container__header--picture">
+          <img src="./assets/images/profile-pic2.jpg" alt="profile picture">
+        </figure>
+      </div>
+      <div class="favorite-container__main">
+        <h2 class="favorite-container__main--title">Trending Movies</h2>
+        <div class="favorite-container__main--cards">
+          <div class="card">
+            <img class="card__image" src="./assets/images/8-image.jpg" alt="card image">
+            <div class="card__info-container">
+              <p class="card__info-container--name">Movie Name</p>
+              <span><i class="fa-solid fa-star"></i> 7.5</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="./assets/images/8-image.jpg" alt="card image">
+            <div class="card__info-container">
+              <p class="card__info-container--name">Movie Name</p>
+              <span><i class="fa-solid fa-star"></i> 7.5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="favorite-container__footer">
+        <button class="favorite-container__footer--button favorite-home">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button class="favorite-container__footer--button favorite-favorite">
+          <i class="fa-solid fa-heart"></i></button>
+        <button class="favorite-container__footer--button favorite-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="favorite-container__footer--button favorite-profile">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </div>
+    </section>
+    <section class="account-container">
+      <div class="account-container__header">
+        <figure class="account-container__header--picture">
+          <img src="./assets/images/profile-pic2.jpg" alt="profile picture">
+        </figure>
+      </div>
+      <div class="account-container__main"></div>
+      <div class="account-container__footer">
+        <button class="account-container__footer--button account-home">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button class="account-container__footer--button account-favorite">
+          <i class="fa-solid fa-heart"></i></button>
+        <button class="account-container__footer--button account-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="account-container__footer--button account-profile">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </div>
+    </section>
+
+  <script src="./scripts/index.js"></script>
+  <script src="https://kit.fontawesome.com/4825aba800.js" crossorigin="anonymous"></script>
+</body>
+</html>
