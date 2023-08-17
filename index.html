@@ -295,8 +295,50 @@
         </button>
       </div>
     </section>
-
-  <script src="./scripts/index.js"></script>
+    <!-- Movie Detail -->
+    <section class="movie-detail">
+      <div class="movie-detail__image-container">
+        <div class="movie-detail__header">
+          <button class="movie-detail__header--button movie-detail-back">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="movie-detail__header--button movie-detail-like">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+        <img class="movie-detail__image-container--image" src="./assets/images/movie.jpg" alt="Movie Poster">
+        <h2 class="movie-detail__image-container--title">Hocus Pocus</h2>
+        <p class="movie-detail__image-container--text">1993</p>
+      </div>
+      <div class="movie-detail__details">
+        <div class="movie-detail__details--genres genres">
+          <div class="genres__card">
+            <button class="genres__card--icon">
+              <i class="fa-solid fa-crown"></i>
+            </button>
+            <span class="genres__card--text">Comedy</span>
+          </div>
+          <div class="genres__card">
+            <button class="genres__card--icon">
+              <i class="fa-solid fa-users"></i>
+            </button>
+            <span class="genres__card--text">Family</span>
+          </div>
+          <div class="genres__card">
+            <button class="genres__card--icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </button>
+            <span class="genres__card--text">Fantasy</span>
+          </div>
+        </div>
+        <div class="movie-detail__details--description">
+          <h3 class="title">Description</h3>
+          <p class="text">Luego de mudarse a Salem, Massachusetts, Max Dennison explora una casa abandonada con su hermana, Dani, y su nueva amiga, Allison. Max accidentalmente libera a tres brujas que solían vivir en el lugar. Con la ayuda de un gato mágico, los chicos deben robar el libro de hechizos de las brujas antes de que se vuelvan inmortales.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./scripts/navigation.js"></script>
   <script src="https://kit.fontawesome.com/4825aba800.js" crossorigin="anonymous"></script>
 </body>
 </html>

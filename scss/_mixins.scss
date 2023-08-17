@@ -102,12 +102,12 @@
   gap: 20px;
 }
 
-// @mixin cardStyle() {
-//   padding: 20px;
-//   width: 100%;
-//   height: 90px;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   border-radius: 20px;
-// }
+@mixin textMovieDetailStyle($bottom, $left, $z-i, $color, $f-s, $letter-sp) {
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-i;
+  color: $color;
+  font-size: $f-s;
+  letter-spacing: $letter-sp;
+}
